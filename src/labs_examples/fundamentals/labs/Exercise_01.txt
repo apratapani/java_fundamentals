@@ -2,21 +2,84 @@ Fundamentals Exercise 1: CLI
      Perform the following tasks using the CLI and copy and paste the commands and results below
 
      1. Navigate to CodingNomads folder (or the space you have create for this project)
+
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads$ ls -ltr
+     total 32
+     drwxr-xr-x 2 anil anil 4096 Feb 16 06:49  projects
+     drwxr-xr-x 3 anil anil 4096 Feb 16 06:56  labs
+     -rw-r--r-- 1 anil anil  201 Feb 17 05:59  intellij.txt
+     drwxr-xr-x 3 anil anil 4096 Feb 18 19:30  resources
+     -rw-r--r-- 1 anil anil   75 Feb 19 04:55  JVM.paper
+     -rw-r--r-- 1 anil anil   75 Feb 19 05:48 "Java's Primitive Data Types.paper"
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads$ pwd
+     /home/anil/Dropbox/Anil_work/notes/languages/java/CodingNomads
+
+
      2. Create new folder Terminal_testing
+
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads$ mkdir -p Terminal_testing
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads$
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads$
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads$ cd Terminal_testing/
+
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ touch an1.txt
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ touch an2.txt
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ touch an3.txt
+
+
          b. print the directory path
+
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ pwd
+         /home/anil/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing
+
          c. list the contents of the folder
+
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ ls -la
+         total 8
+         drwxr-xr-x 2 anil anil 4096 Feb 20 04:58 .
+         drwxr-xr-x 6 anil anil 4096 Feb 20 04:57 ..
+         -rw-r--r-- 1 anil anil    0 Feb 20 04:58 an1.txt
+         -rw-r--r-- 1 anil anil    0 Feb 20 04:58 an2.txt
+         -rw-r--r-- 1 anil anil    0 Feb 20 04:58 an3.txt
+
      5. Inside of folder Terminal_testing, create a new folder
+
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ mkdir -p an
+
+
      6. Copy a file from Terminal_testing to the new folder
+
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ cp -p an1.txt ./an/
+
      7. Move a different file from Terminal_testing to the new folder
+
+        anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ mv an2.txt ./an/
+
      8. Demonstrate removing:
          a. A file
+
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ rm -rf an3.txt
+
          b. A folder
+
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ rm -rf an
+
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
+
+           vi an.4.txt -> type i for insert mode and then type content.
+
          b. Use $ cat print contents of file
+
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ cat an4.txt
+          " Hello how are you guys doing today !"
+
          c. Use $ grep to search for a word inside file
+         anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/Terminal_testing$ cat an4.txt|grep "today"
+          " Hello how are you guys doing today !"
+
 
 Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
