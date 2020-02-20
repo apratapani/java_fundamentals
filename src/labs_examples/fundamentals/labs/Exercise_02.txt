@@ -4,31 +4,145 @@
 
 Initializing git folder
     1. In CodingNomads folder, create new folder git_practice
+
+     anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads$ mkdir -p git_practice
+
+
     2. Inside git_practice:
         a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
             the "git init" command within the git_practice folder.
+
+            anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git init
+            Initialized empty Git repository in /home/anil/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice/.git/
+
         b. Make new file
+            anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ touch an.txt
+
         c. Add file
+
+           anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git add an.txt
+
         d. Commit file
+
+          anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git commit -m "git practice commiting a file an.txt"
+          [master (root-commit) c0a02ba] git practice commiting a file an.txt
+           1 file changed, 0 insertions(+), 0 deletions(-)
+           create mode 100644 an.txt
+
         c. On Github, create new git_practice repository
+
+           https://github.com/apratapani/git_practice.git
+
         d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
             git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
+
+            anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git remote add git_practice https://github.com/apratapani/git_practice.git
+
         d. Push commit file to Github
+
+        anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git push git_practice master
+        Username for 'https://github.com': apratapani
+        Password for 'https://apratapani@github.com':
+        Counting objects: 3, done.
+        Writing objects: 100% (3/3), 227 bytes | 227.00 KiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0)
+        To https://github.com/apratapani/git_practice.git
+         * [new branch]      master -> master
+
+
         e. Practice the following git flow until you feel comfortable:
             i.   Create or modify file
+
+           modified  an.txt
+
+            anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ cat an.txt
+            "Hello how are you doing"
+             "Would like to visit Bali one day"
+
+
             ii.  Add file(s)
+
+            anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git add an.txt
+
             iii. Commit file(s)
+
+            anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git commit -m "modified an.txt"
+            [master 01cd38b] modified an.txt
+             1 file changed, 2 insertions(+)
+
             iv.  Push file(s) to Github repository
+
+            anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git push git_practice master
+            Username for 'https://github.com': apratapani
+            Password for 'https://apratapani@github.com':
+            Counting objects: 3, done.
+            Delta compression using up to 8 threads.
+            Compressing objects: 100% (2/2), done.
+            Writing objects: 100% (3/3), 303 bytes | 303.00 KiB/s, done.
+            Total 3 (delta 0), reused 0 (delta 0)
+            To https://github.com/apratapani/git_practice.git
+               c0a02ba..01cd38b  master -> master
+
 
 Adding a remote
     1. Create new personal repository on Github named "git_practice_2".
+
+    https://github.com/apratapani/git_practice_2
+
     2. On local machine, add the new remote address to the same git repo you were working with in the previous section above
         (directions are provided on Github with new repo is created)
+
+        anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git remote add git_practice_2 https://github.com/apratapani/git_practice_2.git
+
+
     3. Push local git repository to your Github using the new remote.
+
+        anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/languages/java/CodingNomads/git_practice$ git push git_practice_2 master
+        Username for 'https://github.com': apratapani
+        Password for 'https://apratapani@github.com':
+        Counting objects: 6, done.
+        Delta compression using up to 8 threads.
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (6/6), 498 bytes | 249.00 KiB/s, done.
+        Total 6 (delta 0), reused 0 (delta 0)
+        To https://github.com/apratapani/git_practice_2.git
+         * [new branch]      master -> master
+
 
 Cloning repository from Github
     1. Find a repository on Github
+
+    git@github.com:oracle/docker-images.git
+
     2. Clone repository to local machine
+
+    anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/containers/oracle_docker$ git clone git@github.com:oracle/docker-images.git
+    Cloning into 'docker-images'...
+    Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+    remote: Enumerating objects: 28, done.
+    remote: Counting objects: 100% (28/28), done.
+    remote: Compressing objects: 100% (27/27), done.
+    remote: Total 11691 (delta 4), reused 9 (delta 1), pack-reused 11663
+    Receiving objects: 100% (11691/11691), 9.33 MiB | 5.95 MiB/s, done.
+    Resolving deltas: 100% (6860/6860), done.
+
     3. Create new repository on Github
+    https://github.com/apratapani/oracle_docker_images.git
+
     4. Add new remote on local machine
+
+    git remote add oracle_docker_images https://github.com/apratapani/oracle_docker_images.git
+
     5. Push to new Github repository
+
+    anil@anil-HP-EliteBook-850-G5:~/Dropbox/Anil_work/notes/containers/oracle_docker/docker-images$ git push oracle_docker_images master
+    Username for 'https://github.com': apratapani
+    Password for 'https://apratapani@github.com':
+    Counting objects: 11679, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (4425/4425), done.
+    Writing objects: 100% (11679/11679), 9.32 MiB | 2.58 MiB/s, done.
+    Total 11679 (delta 6858), reused 11679 (delta 6858)
+    remote: Resolving deltas: 100% (6858/6858), done.
+    To https://github.com/apratapani/oracle_docker_images.git
+     * [new branch]      master -> master
