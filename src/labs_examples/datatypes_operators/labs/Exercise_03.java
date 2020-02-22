@@ -12,6 +12,18 @@ class ArithmeticOperators {
 
         // write your code below
 
+        int a = 10;
+
+        int b = 2;
+
+        System.out.println("a = 10; b = 2; a + b = " + (a + b));
+
+        System.out.println("a = 10; b = 2; a*b = " + (a*b));
+
+        System.out.println("a = 10; b = 2; a/2 = " + (a/2));
+
+        System.out.println("a = 10; b = 2; a%2 = " + (a%2));
+
     }
 
 }
