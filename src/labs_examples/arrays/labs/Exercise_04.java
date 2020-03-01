@@ -10,4 +10,19 @@ package labs_examples.arrays.labs;
 
 public class Exercise_04 {
 
+    public static void main(String[] args) {
+
+        int[][] scores = {{1,2},{1,2,3,4,5},{6,7,8,9,10},{11,12,13}};
+
+        for (int[] list : scores) {
+            for(int i : list) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+
+
+    }
+
+
 }

@@ -1,5 +1,9 @@
 package labs_examples.arrays.labs;
 
+import videos_source_code.arrays.ArrayLists;
+import java.util.ArrayList;
+
+
 /**
  *  ArrayLists
  *
@@ -10,4 +14,22 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
+    public static void main(String[] args) {
+
+        ArrayList<String> lists = new ArrayList<String>();
+        lists.add("Hello ");
+        lists.add("How ");
+        lists.add("are ");
+        lists.add("you ");
+        lists.add("doing!");
+
+                for(String s : lists) {
+                    System.out.print(s);
+                }
+
+        System.out.println();
+
+
+
+    }
 }
