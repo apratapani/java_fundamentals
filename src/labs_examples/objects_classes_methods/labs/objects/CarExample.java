@@ -9,7 +9,7 @@ class Example {
 
     public static void main(String[] args){
 
-        Engine myEngine = new Engine(400);
+        Airengine myEngine = new Airengine(400);
 
         Stereo myStereo = new Stereo("Panasonic");
 
@@ -27,11 +27,11 @@ class Example {
 
 }
 
-class Engine {
+class Carengine {
 
     double horsePower;
 
-    public Engine(double horsePower){
+    public Carengine(double horsePower){
 
         this.horsePower = horsePower;
 
@@ -65,7 +65,7 @@ class Stereo {
 
 class Car {
 
-    Engine engine;
+    Airengine engine;
 
     Stereo stereo;
 
@@ -73,7 +73,7 @@ class Car {
 
     String color;
 
-    public Car(Engine engine, Stereo stereo, String model, String color){
+    public Car(Airengine engine, Stereo stereo, String model, String color){
 
         this.engine = engine;
 
