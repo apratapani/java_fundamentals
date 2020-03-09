@@ -15,8 +15,8 @@ public class AeroPlane {
 
         Airplane flight = new Airplane(planeAirengine,planeTv,planeCatering,planeSystems,cap,fuellevel);
 
-        System.out.println("This Airplane has a horse power of " + flight.airengine.horsePower + " and its televisions are from " + flight.tv.brand + ". Its catering service is from " + flight.catering.restaurant + ". It has a " +
-                "fuel capacity uptil " + flight.fuelCap + " and filled up to " + flight.currentFuelLevel );
+        // System.out.println("This Airplane has a horse power of " + flight.airengine.horsePower + " and its televisions are from " + flight.tv.brand + ". Its catering service is from " + flight.catering.restaurant + ". It has a " +
+          //      "fuel capacity uptil " + flight.fuelCap + " and filled up to " + flight.currentFuelLevel ); */
 
         System.out.println("This Airplane engine is  " + planeAirengine.toString() + ". This Airplan TV is " + planeTv.toString() + ". This Airplane Catering is served by " + planeCatering.toString() + ". This Plane systems " +
                 "is from " + planeSystems.toString());
@@ -27,7 +27,7 @@ public class AeroPlane {
 }
 
 class Airengine {
-    double horsePower;
+    private double horsePower;
 
     public Airengine(double horsePower) {
         this.horsePower = horsePower;
@@ -42,7 +42,7 @@ class Airengine {
 }
 
 class Tv {
-    String brand;
+    private String brand;
 
     public Tv(String brand) {
         this.brand = brand;
@@ -57,7 +57,7 @@ class Tv {
 }
 
 class Catering {
-    String restaurant;
+    private String restaurant;
 
     public Catering(String restaurant) {
         this.restaurant = restaurant;
@@ -72,7 +72,7 @@ class Catering {
 }
 
 class Systems {
-    String provider;
+    private String provider;
 
     public Systems(String provider) {
         this.provider = provider;
@@ -87,16 +87,16 @@ class Systems {
 }
 
 class Airplane {
-    Airengine airengine;
+   private Airengine airengine;
 
-    Tv tv;
+   private Tv tv;
 
-    Catering catering;
+    private Catering catering;
 
-    Systems systems;
+    private Systems systems;
 
-    double fuelCap;
-    String currentFuelLevel;
+    private double fuelCap;
+    private String currentFuelLevel;
 
     public Airplane(Airengine engine, Tv tv, Catering catering, Systems systems, double fuelCap, String currentFuelLevel) {
         this.airengine = engine;

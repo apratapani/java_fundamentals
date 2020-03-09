@@ -5,7 +5,7 @@ package labs_examples.objects_classes_methods.labs.objects;
  * /
  * */
 
-class Example {
+ class Example {
 
     public static void main(String[] args){
 
@@ -15,9 +15,9 @@ class Example {
 
         Car myCar = new Car(myEngine, myStereo, "XTerra", "Blue");
 
-        System.out.println("I drive a " + myCar.color + " " + myCar.model + " with a "
+       // System.out.println("I drive a " + myCar.color + " " + myCar.model + " with a "
 
-                + myCar.stereo.brand + " stereo, and a " + myCar.engine.horsePower + " engine");
+         //       + myCar.stereo.brand + " stereo, and a " + myCar.engine.horsePower + " engine");
 
         // OR
 
