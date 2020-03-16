@@ -23,13 +23,10 @@ public class Exercise_07 {
         lists.add("you ");
         lists.add("doing!");
 
-                for(String s : lists) {
-                    System.out.print(s);
-                }
+        for(String s : lists) {
+            System.out.print(s);
+        }
 
         System.out.println();
-
-
-
     }
 }

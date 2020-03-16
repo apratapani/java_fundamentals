@@ -3,7 +3,7 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
 /**
  * Why does the output print in the order it does?
  *
- * You answer:
+ * You answer: By default every child class constructor calls parent default contructor. So when a new object of C_1 type which holds reference value of C_1 it will call C_1 constructor which inturn calls subsequent parent constructors.
  *
  */
 

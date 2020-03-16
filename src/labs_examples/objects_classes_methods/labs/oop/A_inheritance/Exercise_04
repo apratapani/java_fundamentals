@@ -1,19 +1,23 @@
 
-Without running the code below, please tell me what it will print.
+// Without running the code below, please tell me what it will print.
+
+// It will print - "Child called." If I have a instance variable then it will show parent instance variable value because default overrides only works for methods not for instance variables if a parent data type holds child reference type.
 
 
-
-public class InheritanceTest
+// public class InheritanceTest
+public class Exercise_04
 {
   public static void main(String[] args)
   {
     Parent c = new Child();
     c.doSomething();
+    System.out.println(c.a);
   }
 }
 
 class Parent
 {
+  int a = 10;
   public void doSomething()
   {
     System.err.println("Parent called");
@@ -22,6 +26,7 @@ class Parent
 
 class Child extends Parent
 {
+  int a = 20;
   public void doSomething()
   {
     System.err.println("Child called");

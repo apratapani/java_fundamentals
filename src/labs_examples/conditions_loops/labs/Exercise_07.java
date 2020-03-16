@@ -23,45 +23,45 @@ public class Exercise_07 {
 
         String word = sc.nextLine();
 
-                int i = 0;
-                char c;
+        int i = 0;
+        char c;
 
         first:
            while (i <= word.length())  {
 
-                    c = word.charAt(i);
+                c = word.charAt(i);
 
-                    switch (c) {
+                switch (c) {
 
-                        case 'a':
-                            System.out.println("Word is " + word + " first vowel is " + c);
-                            break first;
+                    case 'a':
+                        System.out.println("Word is " + word + " first vowel is " + c);
+                        break first;
 
-                        case 'e':
-                            System.out.println("Word is " + word + " first vowel is " + c);
-                            break first;
+                    case 'e':
+                        System.out.println("Word is " + word + " first vowel is " + c);
+                        break first;
 
-                        case 'i':
-                            System.out.println("Word is " + word + " first vowel is " + c);
-                            break first;
+                    case 'i':
+                        System.out.println("Word is " + word + " first vowel is " + c);
+                        break first;
 
 
-                        case 'o':
-                            System.out.println("Word is " + word + " first vowel is " + c);
-                            break first;
+                    case 'o':
+                        System.out.println("Word is " + word + " first vowel is " + c);
+                        break first;
 
-                        case 'u':
-                            System.out.println("Word is " + word + " first vowel is " + c);
-                            break first;
+                    case 'u':
+                        System.out.println("Word is " + word + " first vowel is " + c);
+                        break first;
 
-                        default:
-                            break;
-
-                    }
-
-                     i++;
+                    default:
+                        break;
 
                 }
+
+                 i++;
+
+            }
 
 
     }

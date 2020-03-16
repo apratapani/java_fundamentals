@@ -37,9 +37,5 @@ public class Exercise_02 {
 
         }
 
-
-
-
-
     }
 }

@@ -18,11 +18,7 @@ public class Exercise_09 {
                 System.out.println(i);
                 break;
             }
-
             i++;
-
-              }
-
-
+        }
     }
 }

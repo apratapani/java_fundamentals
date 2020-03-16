@@ -17,12 +17,12 @@ public class Exercise_08 {
 
         do {
 
-            if (j%3 ==0) {
-                System.out.println(i);
-            }
+        if (j%3 ==0) {
+            System.out.println(i);
+        }
 
-           i--;
-            j++;
+        i--;
+        j++;
         } while (i >=1);
 
 
