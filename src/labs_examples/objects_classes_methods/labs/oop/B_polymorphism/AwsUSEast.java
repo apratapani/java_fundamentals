@@ -1,19 +1,25 @@
 package labs_examples.objects_classes_methods.labs.oop.B_polymorphism;
 
-public class awsUSEast extends aws {
+public class AwsUSEast extends Aws {
 
      String vpcCidrBlock;
 
     public void createVPC(String cidrBlock) {
 
-        System.out.println("aws ec2 create-vpc --cidr-block " + cidrBlock");
+        System.out.println("Creating VPC");
+
+        System.out.println("aws ec2 create-vpc --cidr-block " + cidrBlock);
 
         this.vpcCidrBlock = cidrBlock;
 
 
     }
 
+    // method overloading
+
     public void createVPC(String cidrBlock, String instanceTenancy) {
+
+        System.out.println("Creating VPC");
 
         System.out.println("aws ec2 create-vpc --cidr-block " + cidrBlock + "--instance-tenancy " + instanceTenancy);
 
@@ -21,6 +27,9 @@ public class awsUSEast extends aws {
 
 
     }
+
+
+    // overriding the method from super class.
 
     @Override
     public void dedicatedNetwork() {

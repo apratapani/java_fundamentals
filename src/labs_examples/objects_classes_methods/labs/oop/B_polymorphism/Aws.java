@@ -1,7 +1,12 @@
 package labs_examples.objects_classes_methods.labs.oop.B_polymorphism;
 
-public class aws implements publicCloud {
+public class Aws implements publicCloud {
 
+
+    public Aws() {
+        System.out.println("This public cloud is Aws");
+
+    }
 
     @Override
     public void cloudVirtualNetworking() {

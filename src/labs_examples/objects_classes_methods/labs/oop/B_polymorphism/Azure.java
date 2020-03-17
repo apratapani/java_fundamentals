@@ -1,8 +1,11 @@
 package labs_examples.objects_classes_methods.labs.oop.B_polymorphism;
 
-public class azure implements publicCloud {
+public class Azure implements publicCloud {
 
 
+    public Azure() {
+        System.out.println("This public cloud is Microsoft Azure");
+    }
 
     @Override
     public void cloudVirtualNetworking() {
