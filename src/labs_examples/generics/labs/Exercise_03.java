@@ -17,3 +17,25 @@ import java.util.Collection;
  *      4) Write a generic method to find the largest element within the range (begin, end) of a list.
  *
  */
+
+class Exercise_03 {
+
+
+
+   static <T extends Number,V extends Number> double sumOfnums(T val1,V val2) {
+        return (val1.doubleValue() + val2.doubleValue());
+    }
+
+
+    public static void main(String[] args) {
+
+
+        System.out.println(sumOfnums(5.5,6.2));
+
+    }
+
+
+
+
+
+}
