@@ -3,6 +3,11 @@ package labs_examples.lambdas.examples.lambdas;
 import labs_examples.lambdas.examples.functional_interfaces.FunctionalInterfaceExample;
 import labs_examples.lambdas.examples.traditional_interface_implementation.ImplementExample;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.BiPredicate;
+import java.util.function.Supplier;
+
 /**
  * Created by ryandesmond - https://codingnomads.co
  */
@@ -40,6 +45,18 @@ public class LambdaExample_2 {
 
         ImplementExample obj2 = new ImplementExample();
         double t = obj2.calculate(456, 789);
+
+       // Supplier
+
+        // List
+      //  ArrayList
+
+
+
+      //
+        //  Thread
+
+
     }
 
 }
