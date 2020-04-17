@@ -39,20 +39,14 @@ class Exercise_02 {
  class GenericMethodDemo {
 
 
-    public static <T extends Number> Integer genericMethodArrNum(ArrayList<T> arrayList) {
+    public static <T extends Number> Double genericMethodArrNum(ArrayList<T> arrayList) {
 
-        Integer sum = 0;
-
-
+        Double sum = 0.0;
 
         for(T val : arrayList) {
-
-            sum = sum + val.intValue();
-
+           sum = sum + val.doubleValue();
         }
-
         return sum;
-
     }
 
 }

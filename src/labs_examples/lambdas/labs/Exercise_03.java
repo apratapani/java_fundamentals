@@ -39,7 +39,7 @@ class DemoStaticMethodref {
         System.out.println("Make and model of this new car is " + newCar.getMake() + " " + newCar.getModel() );
 
 
-
+ //java.util.function.
 
     }
 

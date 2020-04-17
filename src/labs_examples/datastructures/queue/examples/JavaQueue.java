@@ -23,6 +23,8 @@ public class JavaQueue {
         myQueue.add("queue");
         myQueue.add("implementations");
 
+        myQueue.remove();
+
         // peek at the "top/front" of the Queue
         System.out.println(myQueue.peek());
 
