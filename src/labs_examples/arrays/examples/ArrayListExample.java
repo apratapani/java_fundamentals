@@ -22,6 +22,26 @@ class ArrayListExample {
         // print out modified array list
         System.out.println("Now the arraylist has following elements:" + obj);
 
+        ArrayList<String> obj2 = new ArrayList();
+
+        obj2.add("Anil");
+        obj2.add("Mike");
+        obj2.add("Trish");
+        obj2.add("Brenda");
+        obj2.add("Raja");
+
+        obj.addAll(obj2);
+
+        obj.remove("Trish");
+
+        for(String name: obj) {
+
+            System.out.println(name + ",");
+        }
+
+        System.out.println(obj.size());
+
+
 
     }
 }

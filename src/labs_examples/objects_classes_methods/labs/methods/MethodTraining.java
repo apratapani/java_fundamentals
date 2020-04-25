@@ -16,7 +16,7 @@ public class MethodTraining {
 
         Employee anil = new Employee(39,"Anil","Male");
 
-
+        Employee pratapani = anil;
 
         int a = 10;
         System.out.println("Calling passbyvalue from main, value of a now is " + a );
@@ -29,7 +29,9 @@ public class MethodTraining {
 
         passByReferenceBirthday(anil);
 
-        System.out.println("Age of " + anil.name + " before after passByReferenceBirthday method is " + anil.age);
+        System.out.println("Age of " + anil.name + "  after passByReferenceBirthday method call is " + anil.age);
+
+        System.out.println("Age of " + pratapani.name + "  after passByReferenceBirthday method call, through copy reference variable is " + pratapani.age);
 
         System.out.println("Largest of numbers 5,7,189,195 is " + largest(5,7,189,195));
 
@@ -84,7 +86,7 @@ public class MethodTraining {
 
     static void passByReferenceBirthday(Employee emp) {
 
-        emp.age++;
+       emp.age = emp.age + 20;
 
         System.out.println("Age of " + emp.name + " in passByReferenceBirthday method is " + emp.age);
 
